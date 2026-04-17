@@ -1,0 +1,32 @@
+[project]
+name = "mise"
+version = "0.1.0"
+description = "Mise is a tool to convert online recipes immediately into per serving nutrition information so calorie tracking becomes as easy as one click"
+readme = "README.md"
+authors = [
+    { name = "arsalehi", email = "alirsalehi27@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "beautifulsoup4>=4.14.3",
+    "click>=8.3.2",
+    "httpx>=0.28.1",
+    "lxml>=6.0.4",
+    "pydantic>=2.13.1",
+    "pydantic-settings>=2.13.1",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+mise = "mise:main"
+
+[build-system]
+requires = ["uv_build>=0.11.7,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.20.1",
+    "pytest>=9.0.3",
+    "ruff>=0.15.11",
+]

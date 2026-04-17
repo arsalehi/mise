@@ -1,2 +1,16 @@
 # Misc Personal / Internal documentation
 /internal-docs
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Local data / caches
+*.db
+
+# Environment
+.env
