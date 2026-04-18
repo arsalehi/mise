@@ -14,3 +14,7 @@ __pycache__/
 
 # Environment
 .env
+
+# AI
+.claude
+CLAUDE.md
